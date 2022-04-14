@@ -1,0 +1,45 @@
+digraph classDiagram{
+graph [splines=ortho, rankdir=BT, overlap = false, nodesep=2.0, ranksep=2.0, layout="circo"]
+
+node [shape=record style=filled fillcolor=gray95]
+"org.joda.time.format.DateTimeFormatterBuilder"[label = <{<b>org.joda.time.format.DateTimeFormatterBuilder</b>|LOC: 2678<br/>|Time of Change: 22<br/>}>]
+"org.joda.time.format.PeriodFormatterBuilder"[label = <{<b>org.joda.time.format.PeriodFormatterBuilder</b>|LOC: 2199<br/>|Time of Change: 20<br/>}>]
+"org.joda.time.format.ISODateTimeFormat"[label = <{<b>org.joda.time.format.ISODateTimeFormat</b>|LOC: 2018<br/>|Time of Change: 10<br/>}>]
+"org.joda.time.format.DateTimeFormatter"[label = <{<b>org.joda.time.format.DateTimeFormatter</b>|LOC: 1024<br/>|Time of Change: 17<br/>}>]
+"org.joda.time.format.DateTimeFormat"[label = <{<b>org.joda.time.format.DateTimeFormat</b>|LOC: 907<br/>|Time of Change: 18<br/>}>]
+"org.joda.time.format.DateTimeParserBucket"[label = <{<b>org.joda.time.format.DateTimeParserBucket</b>|LOC: 609<br/>|Time of Change: 9<br/>}>]
+"org.joda.time.format.FormatUtils"[label = <{<b>org.joda.time.format.FormatUtils</b>|LOC: 448<br/>|Time of Change: 4<br/>}>]
+"org.joda.time.format.PeriodFormat"[label = <{<b>org.joda.time.format.PeriodFormat</b>|LOC: 407<br/>|Time of Change: 7<br/>}>]
+"org.joda.time.format.PeriodFormatter"[label = <{<b>org.joda.time.format.PeriodFormatter</b>|LOC: 344<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.format.ISOPeriodFormat"[label = <{<b>org.joda.time.format.ISOPeriodFormat</b>|LOC: 206<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.format.InternalPrinterDateTimePrinter"[label = <{<b>org.joda.time.format.InternalPrinterDateTimePrinter</b>|LOC: 106<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.format.DateTimePrinter"[label = <{<b>org.joda.time.format.DateTimePrinter</b>|LOC: 104<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.format.DateTimePrinterInternalPrinter"[label = <{<b>org.joda.time.format.DateTimePrinterInternalPrinter</b>|LOC: 89<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.format.PeriodPrinter"[label = <{<b>org.joda.time.format.PeriodPrinter</b>|LOC: 83<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.format.InternalParserDateTimeParser"[label = <{<b>org.joda.time.format.InternalParserDateTimeParser</b>|LOC: 72<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.format.InternalPrinter"[label = <{<b>org.joda.time.format.InternalPrinter</b>|LOC: 68<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.format.DateTimeParser"[label = <{<b>org.joda.time.format.DateTimeParser</b>|LOC: 64<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.format.PeriodParser"[label = <{<b>org.joda.time.format.PeriodParser</b>|LOC: 62<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.format.InternalParser"[label = <{<b>org.joda.time.format.InternalParser</b>|LOC: 56<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.format.DateTimeParserInternalParser"[label = <{<b>org.joda.time.format.DateTimeParserInternalParser</b>|LOC: 55<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.format.DateTimeFormat" -> "org.joda.time.format.InternalParser"[arrowhead = curve];
+"org.joda.time.format.InternalPrinterDateTimePrinter" -> "org.joda.time.format.InternalPrinter"[arrowhead = curve];
+"org.joda.time.format.PeriodFormatterBuilder" -> "org.joda.time.format.PeriodParser"[arrowhead = curve];
+"org.joda.time.format.DateTimeFormatterBuilder" -> "org.joda.time.format.InternalParser"[arrowhead = curve];
+"org.joda.time.format.DateTimePrinterInternalPrinter" -> "org.joda.time.format.InternalPrinter"[arrowhead = curve];
+"org.joda.time.format.PeriodFormat" -> "org.joda.time.format.PeriodParser"[arrowhead = curve];
+"org.joda.time.format.DateTimeParserInternalParser" -> "org.joda.time.format.InternalParser"[arrowhead = curve];
+"org.joda.time.format.InternalParserDateTimeParser" -> "org.joda.time.format.InternalParser"[arrowhead = curve];
+"org.joda.time.format.PeriodFormatterBuilder" -> "org.joda.time.format.PeriodFormatterBuilder"[arrowhead = diamond];
+"org.joda.time.format.PeriodFormatter" -> "org.joda.time.format.PeriodParser"[arrowhead = diamond];
+"org.joda.time.format.PeriodFormatter" -> "org.joda.time.format.PeriodPrinter"[arrowhead = diamond];
+"org.joda.time.format.DateTimePrinterInternalPrinter" -> "org.joda.time.format.DateTimePrinter"[arrowhead = diamond];
+"org.joda.time.format.ISODateTimeFormat" -> "org.joda.time.format.DateTimeFormatter"[arrowhead = diamond];
+"org.joda.time.format.InternalPrinterDateTimePrinter" -> "org.joda.time.format.InternalPrinter"[arrowhead = diamond];
+"org.joda.time.format.ISOPeriodFormat" -> "org.joda.time.format.PeriodFormatter"[arrowhead = diamond];
+"org.joda.time.format.DateTimeFormatter" -> "org.joda.time.format.InternalParser"[arrowhead = diamond];
+"org.joda.time.format.DateTimeFormatter" -> "org.joda.time.format.InternalPrinter"[arrowhead = diamond];
+"org.joda.time.format.PeriodFormat" -> "org.joda.time.format.PeriodFormatter"[arrowhead = diamond];
+"org.joda.time.format.DateTimeParserInternalParser" -> "org.joda.time.format.DateTimeParser"[arrowhead = diamond];
+"org.joda.time.format.InternalParserDateTimeParser" -> "org.joda.time.format.InternalParser"[arrowhead = diamond];
+}

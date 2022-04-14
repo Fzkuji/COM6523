@@ -1,0 +1,45 @@
+digraph classDiagram{
+graph [splines=ortho, rankdir=BT, overlap = false, nodesep=2.0, ranksep=2.0]
+
+node [shape=record style=filled fillcolor=gray95]
+"org.joda.time.field.BaseDateTimeField"[label = <{<b>org.joda.time.field.BaseDateTimeField</b>|LOC: 1006<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.field.UnsupportedDateTimeField"[label = <{<b>org.joda.time.field.UnsupportedDateTimeField</b>|LOC: 547<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.field.AbstractReadableInstantFieldProperty"[label = <{<b>org.joda.time.field.AbstractReadableInstantFieldProperty</b>|LOC: 474<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.field.FieldUtils"[label = <{<b>org.joda.time.field.FieldUtils</b>|LOC: 369<br/>|Time of Change: 9<br/>}>]
+"org.joda.time.field.AbstractPartialFieldProperty"[label = <{<b>org.joda.time.field.AbstractPartialFieldProperty</b>|LOC: 360<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.field.DelegatedDateTimeField"[label = <{<b>org.joda.time.field.DelegatedDateTimeField</b>|LOC: 296<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.field.UnsupportedDurationField"[label = <{<b>org.joda.time.field.UnsupportedDurationField</b>|LOC: 279<br/>|Time of Change: 4<br/>}>]
+"org.joda.time.field.DividedDateTimeField"[label = <{<b>org.joda.time.field.DividedDateTimeField</b>|LOC: 258<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.field.RemainderDateTimeField"[label = <{<b>org.joda.time.field.RemainderDateTimeField</b>|LOC: 243<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.field.OffsetDateTimeField"[label = <{<b>org.joda.time.field.OffsetDateTimeField</b>|LOC: 219<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.field.ZeroIsMaxDateTimeField"[label = <{<b>org.joda.time.field.ZeroIsMaxDateTimeField</b>|LOC: 205<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.field.ImpreciseDateTimeField"[label = <{<b>org.joda.time.field.ImpreciseDateTimeField</b>|LOC: 201<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.field.MillisDurationField"[label = <{<b>org.joda.time.field.MillisDurationField</b>|LOC: 174<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.field.DelegatedDurationField"[label = <{<b>org.joda.time.field.DelegatedDurationField</b>|LOC: 169<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.field.BaseDurationField"[label = <{<b>org.joda.time.field.BaseDurationField</b>|LOC: 168<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.field.PreciseDurationDateTimeField"[label = <{<b>org.joda.time.field.PreciseDurationDateTimeField</b>|LOC: 167<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.field.ScaledDurationField"[label = <{<b>org.joda.time.field.ScaledDurationField</b>|LOC: 154<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.field.PreciseDurationField"[label = <{<b>org.joda.time.field.PreciseDurationField</b>|LOC: 148<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.field.PreciseDateTimeField"[label = <{<b>org.joda.time.field.PreciseDateTimeField</b>|LOC: 147<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.field.SkipDateTimeField"[label = <{<b>org.joda.time.field.SkipDateTimeField</b>|LOC: 107<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.field.DecoratedDateTimeField"[label = <{<b>org.joda.time.field.DecoratedDateTimeField</b>|LOC: 106<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.field.DecoratedDurationField"[label = <{<b>org.joda.time.field.DecoratedDurationField</b>|LOC: 104<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.field.SkipUndoDateTimeField"[label = <{<b>org.joda.time.field.SkipUndoDateTimeField</b>|LOC: 102<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.field.LenientDateTimeField"[label = <{<b>org.joda.time.field.LenientDateTimeField</b>|LOC: 77<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.field.StrictDateTimeField"[label = <{<b>org.joda.time.field.StrictDateTimeField</b>|LOC: 71<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.field.RemainderDateTimeField" -> "org.joda.time.field.DecoratedDateTimeField"[arrowhead = onormal];
+"org.joda.time.field.StrictDateTimeField" -> "org.joda.time.field.DelegatedDateTimeField"[arrowhead = onormal];
+"org.joda.time.field.LenientDateTimeField" -> "org.joda.time.field.DelegatedDateTimeField"[arrowhead = onormal];
+"org.joda.time.field.SkipUndoDateTimeField" -> "org.joda.time.field.DelegatedDateTimeField"[arrowhead = onormal];
+"org.joda.time.field.DividedDateTimeField" -> "org.joda.time.field.DecoratedDateTimeField"[arrowhead = onormal];
+"org.joda.time.field.ZeroIsMaxDateTimeField" -> "org.joda.time.field.DecoratedDateTimeField"[arrowhead = onormal];
+"org.joda.time.field.ScaledDurationField" -> "org.joda.time.field.DecoratedDurationField"[arrowhead = onormal];
+"org.joda.time.field.PreciseDurationDateTimeField" -> "org.joda.time.field.BaseDateTimeField"[arrowhead = onormal];
+"org.joda.time.field.PreciseDateTimeField" -> "org.joda.time.field.PreciseDurationDateTimeField"[arrowhead = onormal];
+"org.joda.time.field.DecoratedDateTimeField" -> "org.joda.time.field.BaseDateTimeField"[arrowhead = onormal];
+"org.joda.time.field.OffsetDateTimeField" -> "org.joda.time.field.DecoratedDateTimeField"[arrowhead = onormal];
+"org.joda.time.field.SkipDateTimeField" -> "org.joda.time.field.DelegatedDateTimeField"[arrowhead = onormal];
+"org.joda.time.field.DecoratedDurationField" -> "org.joda.time.field.BaseDurationField"[arrowhead = onormal];
+"org.joda.time.field.ImpreciseDateTimeField" -> "org.joda.time.field.BaseDateTimeField"[arrowhead = onormal];
+"org.joda.time.field.PreciseDurationField" -> "org.joda.time.field.BaseDurationField"[arrowhead = onormal];
+}

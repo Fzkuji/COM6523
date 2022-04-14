@@ -124,10 +124,12 @@ public class ClassDiagram {
     }
 
     public String toString(){
+        //Create dot graph head
         StringBuffer dotGraph = new StringBuffer();
         dotGraph.append("digraph classDiagram{\n" + "graph [splines=ortho, rankdir=BT, overlap = false, nodesep=2.0, ranksep=2.0]\n\n");
         dotGraph.append("node [shape=record style=filled fillcolor=gray95]\n");
 
+        //Add nodes
         if (additionalAttributePath.isEmpty()){
             for(String className : includedClasses){
                 dotGraph.append("\""+className + "\";\n");
@@ -150,11 +152,13 @@ public class ClassDiagram {
                 }
             }
             for(List<String> withAttributeClass : withAttributeClasses){
-                dotGraph.append("\"" + withAttributeClass.get(0) + "\"" + "[label = <{<b>" + withAttributeClass.get(0) + "</b>");
-                for (int i = 1; i <= attibuteNum; i ++){
-                    dotGraph.append("|" + attributeNames.get(i) + ": " + withAttributeClass.get(i) + "<br/>");
+                if (includedClasses.contains(withAttributeClass.get(0))) {
+                    dotGraph.append("\"" + withAttributeClass.get(0) + "\"" + "[label = <{<b>" + withAttributeClass.get(0) + "</b>");
+                    for (int i = 1; i <= attibuteNum; i ++){
+                        dotGraph.append("|" + attributeNames.get(i) + ": " + withAttributeClass.get(i) + "<br/>");
+                    }
+                    dotGraph.append("}>]\n");
                 }
-                dotGraph.append("}>]\n");
             }
         }
 

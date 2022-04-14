@@ -1,0 +1,20 @@
+digraph classDiagram{
+graph [splines=ortho, rankdir=BT, overlap = false, nodesep=2.0, ranksep=2.0]
+
+node [shape=record style=filled fillcolor=gray95]
+"org.joda.time.tz.DateTimeZoneBuilder"[label = <{<b>org.joda.time.tz.DateTimeZoneBuilder</b>|LOC: 1768<br/>|Time of Change: 12<br/>}>]
+"org.joda.time.tz.ZoneInfoCompiler"[label = <{<b>org.joda.time.tz.ZoneInfoCompiler</b>|LOC: 949<br/>|Time of Change: 22<br/>}>]
+"org.joda.time.tz.ZoneInfoProvider"[label = <{<b>org.joda.time.tz.ZoneInfoProvider</b>|LOC: 305<br/>|Time of Change: 10<br/>}>]
+"org.joda.time.tz.CachedDateTimeZone"[label = <{<b>org.joda.time.tz.CachedDateTimeZone</b>|LOC: 215<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.tz.DefaultNameProvider"[label = <{<b>org.joda.time.tz.DefaultNameProvider</b>|LOC: 161<br/>|Time of Change: 6<br/>}>]
+"org.joda.time.tz.FixedDateTimeZone"[label = <{<b>org.joda.time.tz.FixedDateTimeZone</b>|LOC: 105<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.tz.UTCProvider"[label = <{<b>org.joda.time.tz.UTCProvider</b>|LOC: 63<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.tz.Provider"[label = <{<b>org.joda.time.tz.Provider</b>|LOC: 44<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.tz.NameProvider"[label = <{<b>org.joda.time.tz.NameProvider</b>|LOC: 44<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.tz.ZoneInfoLogger"[label = <{<b>org.joda.time.tz.ZoneInfoLogger</b>|LOC: 41<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.tz.UTCProvider" -> "org.joda.time.tz.Provider"[arrowhead = curve];
+"org.joda.time.tz.DefaultNameProvider" -> "org.joda.time.tz.NameProvider"[arrowhead = curve];
+"org.joda.time.tz.ZoneInfoProvider" -> "org.joda.time.tz.Provider"[arrowhead = curve];
+"org.joda.time.tz.DateTimeZoneBuilder" -> "org.joda.time.tz.DateTimeZoneBuilder"[arrowhead = diamond];
+"org.joda.time.tz.CachedDateTimeZone" -> "org.joda.time.tz.CachedDateTimeZone"[arrowhead = diamond];
+}

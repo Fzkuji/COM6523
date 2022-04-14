@@ -1,0 +1,67 @@
+digraph classDiagram{
+graph [splines=ortho, rankdir=BT, overlap = false, nodesep=2.0, ranksep=2.0, layout="circo"]
+
+node [shape=record style=filled fillcolor=gray95]
+"org.joda.time.chrono.GJChronology"[label = <{<b>org.joda.time.chrono.GJChronology</b>|LOC: 1157<br/>|Time of Change: 10<br/>}>]
+"org.joda.time.chrono.BasicChronology"[label = <{<b>org.joda.time.chrono.BasicChronology</b>|LOC: 831<br/>|Time of Change: 9<br/>}>]
+"org.joda.time.chrono.BaseChronology"[label = <{<b>org.joda.time.chrono.BaseChronology</b>|LOC: 682<br/>|Time of Change: 6<br/>}>]
+"org.joda.time.chrono.ZonedChronology"[label = <{<b>org.joda.time.chrono.ZonedChronology</b>|LOC: 651<br/>|Time of Change: 8<br/>}>]
+"org.joda.time.chrono.LimitChronology"[label = <{<b>org.joda.time.chrono.LimitChronology</b>|LOC: 605<br/>|Time of Change: 4<br/>}>]
+"org.joda.time.chrono.IslamicChronology"[label = <{<b>org.joda.time.chrono.IslamicChronology</b>|LOC: 579<br/>|Time of Change: 6<br/>}>]
+"org.joda.time.chrono.AssembledChronology"[label = <{<b>org.joda.time.chrono.AssembledChronology</b>|LOC: 565<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.chrono.BasicMonthOfYearDateTimeField"[label = <{<b>org.joda.time.chrono.BasicMonthOfYearDateTimeField</b>|LOC: 377<br/>|Time of Change: 6<br/>}>]
+"org.joda.time.chrono.JulianChronology"[label = <{<b>org.joda.time.chrono.JulianChronology</b>|LOC: 278<br/>|Time of Change: 5<br/>}>]
+"org.joda.time.chrono.CopticChronology"[label = <{<b>org.joda.time.chrono.CopticChronology</b>|LOC: 272<br/>|Time of Change: 4<br/>}>]
+"org.joda.time.chrono.EthiopicChronology"[label = <{<b>org.joda.time.chrono.EthiopicChronology</b>|LOC: 271<br/>|Time of Change: 4<br/>}>]
+"org.joda.time.chrono.BuddhistChronology"[label = <{<b>org.joda.time.chrono.BuddhistChronology</b>|LOC: 254<br/>|Time of Change: 7<br/>}>]
+"org.joda.time.chrono.BasicWeekyearDateTimeField"[label = <{<b>org.joda.time.chrono.BasicWeekyearDateTimeField</b>|LOC: 253<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.chrono.GregorianChronology"[label = <{<b>org.joda.time.chrono.GregorianChronology</b>|LOC: 249<br/>|Time of Change: 4<br/>}>]
+"org.joda.time.chrono.GJLocaleSymbols"[label = <{<b>org.joda.time.chrono.GJLocaleSymbols</b>|LOC: 249<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.chrono.ISOChronology"[label = <{<b>org.joda.time.chrono.ISOChronology</b>|LOC: 232<br/>|Time of Change: 6<br/>}>]
+"org.joda.time.chrono.BasicGJChronology"[label = <{<b>org.joda.time.chrono.BasicGJChronology</b>|LOC: 206<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.chrono.BasicFixedMonthChronology"[label = <{<b>org.joda.time.chrono.BasicFixedMonthChronology</b>|LOC: 161<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.chrono.LenientChronology"[label = <{<b>org.joda.time.chrono.LenientChronology</b>|LOC: 156<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.chrono.StrictChronology"[label = <{<b>org.joda.time.chrono.StrictChronology</b>|LOC: 156<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.chrono.BasicYearDateTimeField"[label = <{<b>org.joda.time.chrono.BasicYearDateTimeField</b>|LOC: 154<br/>|Time of Change: 4<br/>}>]
+"org.joda.time.chrono.GJEraDateTimeField"[label = <{<b>org.joda.time.chrono.GJEraDateTimeField</b>|LOC: 153<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.chrono.GJDayOfWeekDateTimeField"[label = <{<b>org.joda.time.chrono.GJDayOfWeekDateTimeField</b>|LOC: 142<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.chrono.BasicSingleEraDateTimeField"[label = <{<b>org.joda.time.chrono.BasicSingleEraDateTimeField</b>|LOC: 134<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.chrono.GJYearOfEraDateTimeField"[label = <{<b>org.joda.time.chrono.GJYearOfEraDateTimeField</b>|LOC: 125<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField"[label = <{<b>org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField</b>|LOC: 121<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.chrono.ISOYearOfEraDateTimeField"[label = <{<b>org.joda.time.chrono.ISOYearOfEraDateTimeField</b>|LOC: 119<br/>|Time of Change: 4<br/>}>]
+"org.joda.time.chrono.BasicDayOfMonthDateTimeField"[label = <{<b>org.joda.time.chrono.BasicDayOfMonthDateTimeField</b>|LOC: 111<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.chrono.BasicDayOfYearDateTimeField"[label = <{<b>org.joda.time.chrono.BasicDayOfYearDateTimeField</b>|LOC: 108<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.chrono.GJCacheKey"[label = <{<b>org.joda.time.chrono.GJCacheKey</b>|LOC: 76<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.chrono.GJMonthOfYearDateTimeField"[label = <{<b>org.joda.time.chrono.GJMonthOfYearDateTimeField</b>|LOC: 66<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.chrono.ISOChronology" -> "org.joda.time.chrono.AssembledChronology"[arrowhead = onormal];
+"org.joda.time.chrono.LenientChronology" -> "org.joda.time.chrono.AssembledChronology"[arrowhead = onormal];
+"org.joda.time.chrono.EthiopicChronology" -> "org.joda.time.chrono.BasicFixedMonthChronology"[arrowhead = onormal];
+"org.joda.time.chrono.IslamicChronology" -> "org.joda.time.chrono.BasicChronology"[arrowhead = onormal];
+"org.joda.time.chrono.BasicFixedMonthChronology" -> "org.joda.time.chrono.BasicChronology"[arrowhead = onormal];
+"org.joda.time.chrono.GJMonthOfYearDateTimeField" -> "org.joda.time.chrono.BasicMonthOfYearDateTimeField"[arrowhead = onormal];
+"org.joda.time.chrono.LimitChronology" -> "org.joda.time.chrono.AssembledChronology"[arrowhead = onormal];
+"org.joda.time.chrono.GregorianChronology" -> "org.joda.time.chrono.BasicGJChronology"[arrowhead = onormal];
+"org.joda.time.chrono.StrictChronology" -> "org.joda.time.chrono.AssembledChronology"[arrowhead = onormal];
+"org.joda.time.chrono.JulianChronology" -> "org.joda.time.chrono.BasicGJChronology"[arrowhead = onormal];
+"org.joda.time.chrono.CopticChronology" -> "org.joda.time.chrono.BasicFixedMonthChronology"[arrowhead = onormal];
+"org.joda.time.chrono.BasicGJChronology" -> "org.joda.time.chrono.BasicChronology"[arrowhead = onormal];
+"org.joda.time.chrono.BuddhistChronology" -> "org.joda.time.chrono.AssembledChronology"[arrowhead = onormal];
+"org.joda.time.chrono.GJYearOfEraDateTimeField" -> "org.joda.time.chrono.BasicChronology"[arrowhead = diamond];
+"org.joda.time.chrono.BasicWeekOfWeekyearDateTimeField" -> "org.joda.time.chrono.BasicChronology"[arrowhead = diamond];
+"org.joda.time.chrono.ISOChronology" -> "org.joda.time.chrono.ISOChronology"[arrowhead = diamond];
+"org.joda.time.chrono.BasicYearDateTimeField" -> "org.joda.time.chrono.BasicChronology"[arrowhead = diamond];
+"org.joda.time.chrono.EthiopicChronology" -> "org.joda.time.chrono.EthiopicChronology"[arrowhead = diamond];
+"org.joda.time.chrono.GJChronology" -> "org.joda.time.chrono.GJChronology"[arrowhead = diamond];
+"org.joda.time.chrono.IslamicChronology" -> "org.joda.time.chrono.IslamicChronology"[arrowhead = diamond];
+"org.joda.time.chrono.BasicWeekyearDateTimeField" -> "org.joda.time.chrono.BasicChronology"[arrowhead = diamond];
+"org.joda.time.chrono.LimitChronology" -> "org.joda.time.chrono.LimitChronology"[arrowhead = diamond];
+"org.joda.time.chrono.GJDayOfWeekDateTimeField" -> "org.joda.time.chrono.BasicChronology"[arrowhead = diamond];
+"org.joda.time.chrono.GregorianChronology" -> "org.joda.time.chrono.GregorianChronology"[arrowhead = diamond];
+"org.joda.time.chrono.BasicMonthOfYearDateTimeField" -> "org.joda.time.chrono.BasicChronology"[arrowhead = diamond];
+"org.joda.time.chrono.GJEraDateTimeField" -> "org.joda.time.chrono.BasicChronology"[arrowhead = diamond];
+"org.joda.time.chrono.JulianChronology" -> "org.joda.time.chrono.JulianChronology"[arrowhead = diamond];
+"org.joda.time.chrono.CopticChronology" -> "org.joda.time.chrono.CopticChronology"[arrowhead = diamond];
+"org.joda.time.chrono.BasicDayOfMonthDateTimeField" -> "org.joda.time.chrono.BasicChronology"[arrowhead = diamond];
+"org.joda.time.chrono.BasicDayOfYearDateTimeField" -> "org.joda.time.chrono.BasicChronology"[arrowhead = diamond];
+"org.joda.time.chrono.BuddhistChronology" -> "org.joda.time.chrono.BuddhistChronology"[arrowhead = diamond];
+}

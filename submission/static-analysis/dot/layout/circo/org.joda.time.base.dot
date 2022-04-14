@@ -1,0 +1,25 @@
+digraph classDiagram{
+graph [splines=ortho, rankdir=BT, overlap = false, nodesep=2.0, ranksep=2.0, layout="circo"]
+
+node [shape=record style=filled fillcolor=gray95]
+"org.joda.time.base.BasePeriod"[label = <{<b>org.joda.time.base.BasePeriod</b>|LOC: 619<br/>|Time of Change: 5<br/>}>]
+"org.joda.time.base.AbstractInterval"[label = <{<b>org.joda.time.base.AbstractInterval</b>|LOC: 509<br/>|Time of Change: 9<br/>}>]
+"org.joda.time.base.AbstractInstant"[label = <{<b>org.joda.time.base.AbstractInstant</b>|LOC: 442<br/>|Time of Change: 4<br/>}>]
+"org.joda.time.base.AbstractPartial"[label = <{<b>org.joda.time.base.AbstractPartial</b>|LOC: 415<br/>|Time of Change: 4<br/>}>]
+"org.joda.time.base.AbstractDateTime"[label = <{<b>org.joda.time.base.AbstractDateTime</b>|LOC: 346<br/>|Time of Change: 4<br/>}>]
+"org.joda.time.base.BaseSingleFieldPeriod"[label = <{<b>org.joda.time.base.BaseSingleFieldPeriod</b>|LOC: 346<br/>|Time of Change: 4<br/>}>]
+"org.joda.time.base.BaseDateTime"[label = <{<b>org.joda.time.base.BaseDateTime</b>|LOC: 342<br/>|Time of Change: 5<br/>}>]
+"org.joda.time.base.BasePartial"[label = <{<b>org.joda.time.base.BasePartial</b>|LOC: 312<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.base.BaseDuration"[label = <{<b>org.joda.time.base.BaseDuration</b>|LOC: 272<br/>|Time of Change: 5<br/>}>]
+"org.joda.time.base.BaseInterval"[label = <{<b>org.joda.time.base.BaseInterval</b>|LOC: 254<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.base.AbstractPeriod"[label = <{<b>org.joda.time.base.AbstractPeriod</b>|LOC: 246<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.base.AbstractDuration"[label = <{<b>org.joda.time.base.AbstractDuration</b>|LOC: 221<br/>|Time of Change: 4<br/>}>]
+"org.joda.time.base.BaseLocal"[label = <{<b>org.joda.time.base.BaseLocal</b>|LOC: 63<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.base.AbstractDateTime" -> "org.joda.time.base.AbstractInstant"[arrowhead = onormal];
+"org.joda.time.base.BaseLocal" -> "org.joda.time.base.AbstractPartial"[arrowhead = onormal];
+"org.joda.time.base.BaseInterval" -> "org.joda.time.base.AbstractInterval"[arrowhead = onormal];
+"org.joda.time.base.BaseDuration" -> "org.joda.time.base.AbstractDuration"[arrowhead = onormal];
+"org.joda.time.base.BasePartial" -> "org.joda.time.base.AbstractPartial"[arrowhead = onormal];
+"org.joda.time.base.BaseDateTime" -> "org.joda.time.base.AbstractDateTime"[arrowhead = onormal];
+"org.joda.time.base.BasePeriod" -> "org.joda.time.base.AbstractPeriod"[arrowhead = onormal];
+}

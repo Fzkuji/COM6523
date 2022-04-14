@@ -1,0 +1,63 @@
+digraph classDiagram{
+graph [splines=ortho, rankdir=BT, overlap = false, nodesep=2.0, ranksep=2.0]
+
+node [shape=record style=filled fillcolor=gray95]
+"org.joda.time.convert.ConverterManager"[label = <{<b>org.joda.time.convert.ConverterManager</b>|LOC: 597<br/>|Time of Change: 3<br/>}>]
+"org.joda.time.convert.ConverterSet"[label = <{<b>org.joda.time.convert.ConverterSet</b>|LOC: 328<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.convert.StringConverter"[label = <{<b>org.joda.time.convert.StringConverter</b>|LOC: 250<br/>|Time of Change: 4<br/>}>]
+"org.joda.time.convert.AbstractConverter"[label = <{<b>org.joda.time.convert.AbstractConverter</b>|LOC: 161<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.convert.CalendarConverter"[label = <{<b>org.joda.time.convert.CalendarConverter</b>|LOC: 135<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.convert.ReadableIntervalConverter"[label = <{<b>org.joda.time.convert.ReadableIntervalConverter</b>|LOC: 116<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.convert.ReadableInstantConverter"[label = <{<b>org.joda.time.convert.ReadableInstantConverter</b>|LOC: 113<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.convert.ReadablePartialConverter"[label = <{<b>org.joda.time.convert.ReadablePartialConverter</b>|LOC: 107<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.convert.NullConverter"[label = <{<b>org.joda.time.convert.NullConverter</b>|LOC: 98<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.convert.ReadableDurationConverter"[label = <{<b>org.joda.time.convert.ReadableDurationConverter</b>|LOC: 91<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.convert.PartialConverter"[label = <{<b>org.joda.time.convert.PartialConverter</b>|LOC: 89<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.convert.ReadablePeriodConverter"[label = <{<b>org.joda.time.convert.ReadablePeriodConverter</b>|LOC: 84<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.convert.LongConverter"[label = <{<b>org.joda.time.convert.LongConverter</b>|LOC: 80<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.convert.InstantConverter"[label = <{<b>org.joda.time.convert.InstantConverter</b>|LOC: 72<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.convert.DateConverter"[label = <{<b>org.joda.time.convert.DateConverter</b>|LOC: 69<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.convert.IntervalConverter"[label = <{<b>org.joda.time.convert.IntervalConverter</b>|LOC: 53<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.convert.PeriodConverter"[label = <{<b>org.joda.time.convert.PeriodConverter</b>|LOC: 51<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.convert.DurationConverter"[label = <{<b>org.joda.time.convert.DurationConverter</b>|LOC: 36<br/>|Time of Change: 2<br/>}>]
+"org.joda.time.convert.Converter"[label = <{<b>org.joda.time.convert.Converter</b>|LOC: 34<br/>|Time of Change: 1<br/>}>]
+"org.joda.time.convert.ReadablePartialConverter" -> "org.joda.time.convert.AbstractConverter"[arrowhead = onormal];
+"org.joda.time.convert.DateConverter" -> "org.joda.time.convert.AbstractConverter"[arrowhead = onormal];
+"org.joda.time.convert.LongConverter" -> "org.joda.time.convert.AbstractConverter"[arrowhead = onormal];
+"org.joda.time.convert.ReadableDurationConverter" -> "org.joda.time.convert.AbstractConverter"[arrowhead = onormal];
+"org.joda.time.convert.ReadablePeriodConverter" -> "org.joda.time.convert.AbstractConverter"[arrowhead = onormal];
+"org.joda.time.convert.ReadableIntervalConverter" -> "org.joda.time.convert.AbstractConverter"[arrowhead = onormal];
+"org.joda.time.convert.NullConverter" -> "org.joda.time.convert.AbstractConverter"[arrowhead = onormal];
+"org.joda.time.convert.StringConverter" -> "org.joda.time.convert.AbstractConverter"[arrowhead = onormal];
+"org.joda.time.convert.ReadableInstantConverter" -> "org.joda.time.convert.AbstractConverter"[arrowhead = onormal];
+"org.joda.time.convert.CalendarConverter" -> "org.joda.time.convert.AbstractConverter"[arrowhead = onormal];
+"org.joda.time.convert.ReadablePartialConverter" -> "org.joda.time.convert.PartialConverter"[arrowhead = curve];
+"org.joda.time.convert.PartialConverter" -> "org.joda.time.convert.Converter"[arrowhead = curve];
+"org.joda.time.convert.DurationConverter" -> "org.joda.time.convert.Converter"[arrowhead = curve];
+"org.joda.time.convert.ReadablePeriodConverter" -> "org.joda.time.convert.PeriodConverter"[arrowhead = curve];
+"org.joda.time.convert.ReadableIntervalConverter" -> "org.joda.time.convert.PeriodConverter"[arrowhead = curve];
+"org.joda.time.convert.NullConverter" -> "org.joda.time.convert.IntervalConverter"[arrowhead = curve];
+"org.joda.time.convert.AbstractConverter" -> "org.joda.time.convert.Converter"[arrowhead = curve];
+"org.joda.time.convert.DateConverter" -> "org.joda.time.convert.PartialConverter"[arrowhead = curve];
+"org.joda.time.convert.StringConverter" -> "org.joda.time.convert.IntervalConverter"[arrowhead = curve];
+"org.joda.time.convert.ReadableInstantConverter" -> "org.joda.time.convert.PartialConverter"[arrowhead = curve];
+"org.joda.time.convert.InstantConverter" -> "org.joda.time.convert.Converter"[arrowhead = curve];
+"org.joda.time.convert.LongConverter" -> "org.joda.time.convert.DurationConverter"[arrowhead = curve];
+"org.joda.time.convert.IntervalConverter" -> "org.joda.time.convert.Converter"[arrowhead = curve];
+"org.joda.time.convert.PeriodConverter" -> "org.joda.time.convert.Converter"[arrowhead = curve];
+"org.joda.time.convert.CalendarConverter" -> "org.joda.time.convert.PartialConverter"[arrowhead = curve];
+"org.joda.time.convert.ReadableDurationConverter" -> "org.joda.time.convert.PeriodConverter"[arrowhead = curve];
+"org.joda.time.convert.ReadablePartialConverter" -> "org.joda.time.convert.ReadablePartialConverter"[arrowhead = diamond];
+"org.joda.time.convert.DateConverter" -> "org.joda.time.convert.DateConverter"[arrowhead = diamond];
+"org.joda.time.convert.LongConverter" -> "org.joda.time.convert.LongConverter"[arrowhead = diamond];
+"org.joda.time.convert.ConverterSet" -> "org.joda.time.convert.Converter"[arrowhead = diamond];
+"org.joda.time.convert.ReadableDurationConverter" -> "org.joda.time.convert.ReadableDurationConverter"[arrowhead = diamond];
+"org.joda.time.convert.ReadablePeriodConverter" -> "org.joda.time.convert.ReadablePeriodConverter"[arrowhead = diamond];
+"org.joda.time.convert.ReadableIntervalConverter" -> "org.joda.time.convert.ReadableIntervalConverter"[arrowhead = diamond];
+"org.joda.time.convert.NullConverter" -> "org.joda.time.convert.NullConverter"[arrowhead = diamond];
+"org.joda.time.convert.ConverterManager" -> "org.joda.time.convert.ConverterSet"[arrowhead = diamond];
+"org.joda.time.convert.ConverterManager" -> "org.joda.time.convert.ConverterManager"[arrowhead = diamond];
+"org.joda.time.convert.StringConverter" -> "org.joda.time.convert.StringConverter"[arrowhead = diamond];
+"org.joda.time.convert.ReadableInstantConverter" -> "org.joda.time.convert.ReadableInstantConverter"[arrowhead = diamond];
+"org.joda.time.convert.CalendarConverter" -> "org.joda.time.convert.CalendarConverter"[arrowhead = diamond];
+}
